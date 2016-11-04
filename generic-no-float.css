@@ -42,7 +42,7 @@ see http://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 	width: 100%;
 }
 .wpmem_msg {
-	width: 74%;
+	width: 98%;
 }
 
 
@@ -82,10 +82,13 @@ see http://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 #wpmem_reg, 
 #wpmem_login {
 	color: rgb(43, 43, 43);
-	font-family: Arial,sans-serif;
+	font-family: "Nanum Gothic","NanumGothic" !important;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
+/* 	border:1px solid #eee; */
+	width:50%;
+	margin:0 auto;
 }
 
 #wpmem_reg input[type="text"],
@@ -100,6 +103,19 @@ see http://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 	color: rgb(43, 43, 43);
 	padding: 8px 10px 8px;
 	background: none repeat scroll 0% 0% #fff;
+	height: 40px;
+}
+
+#wpmem_reg input[type="submit"], #wpmem_login input[type="submit"] {
+	font-family: "Nanum Gothic","NanumGothic" !important;
+	vertical-align: middle;
+	color: #fff;
+	background-color: #1a80b6;
+	border: 1px solid #0a557d;
+	font-size: 13px;
+	padding: 10px 10px;
+	border-radius: 2px;
+	cursor:pointer;
 }
 
 #wpmem_reg input,
@@ -143,6 +159,7 @@ see http://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 	line-height: 1;
 	font-weight: 700;
 	margin-bottom: 10px;
+	display: none;
 }
 #wpmem_reg .form, 
 #wpmem_login .form {
@@ -169,7 +186,7 @@ see http://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 #wpmem_reg .div_image,
 #wpmem_reg .div_file,
 #wpmem_reg .div_url { 
-	width:74%;
+	width:98%;
 	margin:0 0 14px 0;
 }
 #wpmem_login input[type="checkbox"] {
@@ -211,7 +228,7 @@ see http://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 }
 
 #wpmem_reg .captcha { 
-	width: 74%;
+	width: 98%;
 	margin: 5px 0px; 
 }
 #wpmem_reg .captcha table{
@@ -219,8 +236,9 @@ see http://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 }
 #wpmem_login .link-text {
 	padding: 4px 0;
-	width: 74%;
-	text-align:right;
+	width: 98%;
+	text-align:left;
+	
 }
 
 #tos {
@@ -231,16 +249,19 @@ see http://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 /* Buttons */
 
 #wpmem_reg .button_div, #wpmem_login .button_div {
-	width:74%;
+	width:98%;
 	height:55px;
 	padding: 6px 0;
-	text-align: right;
+	text-align: left;
 }
 
 
 /** for smaller screens */
 
 @media screen and (max-width: 720px) {
+	#wpmem_login input[type="submit"] {
+		width:50%;
+	}
 	#wpmem_reg label.text, #wpmem_reg label.checkbox, 
 	#wpmem_reg label.textarea , #wpmem_reg label.select,
 	#wpmem_login label, #wpmem_reg .div_text, #wpmem_reg .div_textarea, 
