@@ -259,7 +259,13 @@ see http://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 /** for smaller screens */
 
 @media screen and (max-width: 720px) {
-	#wpmem_login input[type="submit"] {
+	
+    #wpmem_reg, 
+    #wpmem_login { 
+        width:90%; 
+    }
+
+    #wpmem_login input[type="submit"] {
 		width:50%;
 	}
 	#wpmem_reg label.text, #wpmem_reg label.checkbox, 
